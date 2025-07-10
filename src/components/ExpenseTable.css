@@ -1,0 +1,65 @@
+.expense-table {
+  overflow-x: auto;
+  margin-top: 24px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.expense-table.dark {
+  background-color: #161b22;
+  color: white;
+}
+
+.expense-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: left;
+}
+
+.expense-table thead {
+  background-color: #e2e8f0;
+  font-weight: bold;
+}
+
+.expense-table.dark thead {
+  background-color: #21262d;
+}
+
+.expense-table th,
+.expense-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.expense-table td {
+  color: #333;
+}
+
+.expense-table.dark td {
+  color: white;
+}
+
+.expense-table tr:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.expense-table.dark tr:hover {
+  background-color: #2a2e35;
+}
+
+.expense-table .selected {
+  background-color: #c6f6d5; /* light green */
+}
+
+.expense-table.dark .selected {
+  background-color: #238636; /* GitHub green */
+}
+
+.expense-table .empty {
+  text-align: center;
+  color: gray;
+  padding: 24px;
+}
