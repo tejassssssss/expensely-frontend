@@ -51,11 +51,11 @@
 }
 
 .expense-table .selected {
-  background-color: #c6f6d5; /* light green */
+  background-color: #c6f6d5;
 }
 
 .expense-table.dark .selected {
-  background-color: #238636; /* GitHub green */
+  background-color: #238636;
 }
 
 .expense-table .empty {

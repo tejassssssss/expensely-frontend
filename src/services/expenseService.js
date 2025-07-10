@@ -1,6 +1,6 @@
 const BASE_URL = "http://127.0.0.1:5000/api";
 
-// ✅ Get all expenses
+// Get all expenses
 export async function getExpenses() {
   try {
     const res = await fetch(`${BASE_URL}/expenses`);
@@ -17,7 +17,7 @@ export async function getExpenses() {
   }
 }
 
-// ✅ Add a new expense
+// Add a new expense
 export async function addExpense(expense) {
   try {
     const res = await fetch(`${BASE_URL}/add`, {
@@ -40,7 +40,7 @@ export async function addExpense(expense) {
   }
 }
 
-// ✅ Delete an expense
+// Delete an expense
 export async function deleteExpense(id) {
   try {
     const res = await fetch(`${BASE_URL}/delete/${id}`, {
@@ -59,7 +59,7 @@ export async function deleteExpense(id) {
   }
 }
 
-// ✅ Export expenses as CSV
+// Export expenses as CSV
 export async function exportExpenses() {
   try {
     const res = await fetch(`${BASE_URL}/export`, {
@@ -86,7 +86,7 @@ export async function exportExpenses() {
   }
 }
 
-// ✅ Edit an existing expense
+// Edit an existing expense
 export async function editExpense(id, updatedExpense) {
   try {
     const res = await fetch(`${BASE_URL}/edit/${id}`, {

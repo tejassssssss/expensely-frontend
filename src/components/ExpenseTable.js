@@ -9,7 +9,7 @@ const ExpenseTable = ({
   selectedAll,
 }) => {
   const handleSelectAll = () => {
-    onSelectAll(); // parent should manage toggle logic
+    onSelectAll();
   };
 
   return (
